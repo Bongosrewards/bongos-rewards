@@ -23,6 +23,10 @@
       text-align: center;
       max-width: 400px;
     }
+    img {
+      width: 200px;
+      margin-bottom: 1.5rem;
+    }
     h1 {
       margin-bottom: 1rem;
     }
@@ -43,7 +47,7 @@
 </head>
 <body>
   <div class="container" id="ageCheck">
-    <img src="your-logo-url" alt="Bongos Logo" style="width: 200px; margin-bottom: 1.5rem;" />
+    <img src="https://bongosrewards.github.io/bongos-rewards/bongos-logo.png" alt="Bongos Logo" />
     <h1>Are you 21 or older?</h1>
     <button onclick="redirectToForm(true)">Yes</button>
     <button onclick="redirectToForm(false)">No</button>
@@ -52,7 +56,7 @@
   <script>
     function redirectToForm(isOfAge) {
       if (isOfAge) {
-        window.location.href = "https://forms.gle/pPFU7HoLiztMQHCaA"; // Replace with your actual form if it changes
+        window.location.href = "https://forms.gle/pPFU7HoLiztMQHCaA";
       } else {
         document.getElementById("ageCheck").innerHTML = "<h1>Sorry, you must be 21+ to participate in Bongos Rewards.</h1>";
       }
